@@ -17,4 +17,4 @@ recommanderActivite("ensoleillé");
 recommanderActivite("pluvieux"); 
 recommanderActivite("neigeux"); 
 recommanderActivite("orageux");
-recommanderActivite("venteux");
+recommanderActivite("couvert");
