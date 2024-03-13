@@ -25,9 +25,8 @@ h1 {
     overflow: hidden;
   }
   
-  .btn span {
-    position: relative;
-    z-index: 1;
+  .btn:hover span {
+    color: black;
   }
   
   .btn::before {
@@ -46,4 +45,10 @@ h1 {
   .btn:hover::before {
     width: 550px;
     height: 550px;
+  }
+
+  .btn span {
+    position: relative;
+    z-index: 1;
+    transform: color 0.50s;
   }
