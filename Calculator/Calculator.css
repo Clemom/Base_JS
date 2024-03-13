@@ -61,12 +61,17 @@
       background-color: #ddd;
   }
   
+  button:active {
+    background-color: #4d4d4d;
+  }
+
   .reset{
       background-color: #993a35;
       color: #fff;
   }
+
   
-  .number, .decimal, .operation{
+  .number, .decimal, .operation, .erase {
       background-color: #fff;
       color: #333;
   
@@ -82,3 +87,5 @@
       grid-row: span 3;
       color: #fff;
   }
+
+  

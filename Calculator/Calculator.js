@@ -1,6 +1,6 @@
 const boutonsE1 = document.querySelectorAll("button");
 
-const inputChampE1 = document.getElementById("resultat");
+const champValeur = document.getElementById("resultat");
 
 for (let i = 0; i < boutonsE1.length; i++) {
     boutonsE1[i].addEventListener ("click", () => {
@@ -9,20 +9,27 @@ for (let i = 0; i < boutonsE1.length; i++) {
             resetResultat ();
         }else if (boutonValeur === "=") {
             calculeResultat ();
+        }else if (boutonValeur === "❮") {
+            effaceResultat ();
         } else {
             saisiValeur(boutonValeur);
         }
     });
 }
 
+function effaceResultat () {
+    const texteAffiche = champValeur.value;
+    champValeur.value = texteAffiche.slice(0, -1);
+}
+
 function resetResultat () {
-    inputChampE1.value = " ";
+    champValeur.value = " ";
 }
 
 function calculeResultat () {
-    inputChampE1.value = eval(inputChampE1.value);
+    champValeur.value = eval(champValeur.value);
 }
 
 function saisiValeur (boutonValeur) {
-    inputChampE1.value += boutonValeur;
+    champValeur.value += boutonValeur;
 }
