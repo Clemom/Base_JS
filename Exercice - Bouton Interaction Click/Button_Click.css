@@ -1,0 +1,37 @@
+*{
+    background-color: #FFFFEA;
+    z-index: -1;
+}
+
+#BoutonCompteur {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 700px;
+    margin-top: 320px;
+    border-radius: 35px;
+    color: white;
+    padding: 3rem 5rem;
+    background: #FF5E5B;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#AffichageCompteur {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 80px;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
