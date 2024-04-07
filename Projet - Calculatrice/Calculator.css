@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    background-color: #494949;
+  }
+  
+  .h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 280px;
+  }
+
+    h1 {
+        color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100px;
+    }
+
+  .calculatrice {
+    background-color: #494949;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    box-shadow: 0 2px 5px rgba(90, 84, 84, 0.3);
+    border-radius: 10px;
+  }
+  
+  #resultat{
+      width: 100%;
+      padding: 10px;
+      font-size: 44px;
+      border: none;
+      background-color: #fff;
+      box-shadow: 0 10px 1px rgba(0, 0, 0, 0.3) inset;
+      border-radius: 10px;
+  }
+  
+  .boutons{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  button{
+      padding: 10px;
+      font-size: 24px;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+  }
+  
+  button:hover{
+      background-color: #a5a4f7;
+  }
+  
+  button:active {
+    background-color: #4d4d4d;
+  }
+  
+  .number, .decimal, .operation, .erase, .egal, .reset {
+      background-color: #fff;
+      color: #333;
+  
+  }
+  
+  .btn {
+    background-color: #1B4079 ;
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .operation {
+    background-color: #4076c7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  
+  .operation::before {
+    content: "";
+    position: absolute;
+    background-color: #0051ff;
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.20s, height 0.20s;
+  }
+  
+  .operation:hover::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .operation span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .reset {
+    background-color: #d65555;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  
+  .reset::before {
+    content: "";
+    position: absolute;
+    background-color: #ff1b1b;
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.20s, height 0.20s;
+  }
+  
+  .reset:hover::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .reset span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .egal{
+    background-color: #61bb88;
+    grid-row: span 3;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+  
+  .egal::before {
+    content: "";
+    position: absolute;
+    background-color: #00ad2b;
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.20s, height 0.20s;
+  }
+  
+  .egal:hover::before {
+    width: 350px;
+    height: 350px;
+  }
+
+  .egal span {
+    position: relative;
+    z-index: 1;
+  }
