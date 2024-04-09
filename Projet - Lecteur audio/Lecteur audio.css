@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ---dark: #333;
+    --color-bg: rgb(27, 27, 27);
+    --color-white: #f1f1f1;
+    font-family: 'Dancing Script';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg);
+}
+
+.musique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.musique img {
+    display: block;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.player {
+    margin-top: -50px;
+    position: relative;
+    width: 400px;
+    min-height: 80px;
+    border-radius: 20px;
+    padding: 0.7em 0.5rem;
+    background: var(--color-bg);
+    border: 2px double var(--color-white);
+    box-shadow: -1px -1px 10px var(--color-white),
+                5px 5px 15px rgba(0,0,0,.3),
+                inset -5px -5px 15px rgba(0, 0, 0, .1),
+                inset 5px 5px 15px rgba(0, 0, 0, .1);
+}
+
+.titre {
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btns {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.btns span {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(---dark);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+                inset -2px -2px 15px var(--color-bg),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btns span:active {
+    color: rgb(148, 148, 148);
+}
+
+.btns span.active {
+    color: rgb(148, 148, 148);
+}
+
+.btns span.play-pause {
+    width: 80px;
+    height: 80px;
+}
+
+.btns span ion-icon {
+    font-size: 1em;
+}
+
+.btns span.play-pause ion-icon {
+    font-size: 2.5em;
+}
+
+.btns span.retour ion-icon {
+    font-size: 1.5em;
+}
+
+.btns span.suivant ion-icon {
+    font-size: 1.5em;
+}
