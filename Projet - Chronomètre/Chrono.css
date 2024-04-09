@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(rgb(46, 46, 46),
+    rgb(12, 12, 12));
+}
+
+.all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    padding: 25px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 999px;
+    box-shadow: 10px 15px 15px 1px rgb(0, 0, 0, .8);
+}
+
+.timer-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    position: relative;
+}
+
+.chrono {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.btns {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 2rem;
+    font-size: 40px;
+    color: black;
+    border: none;
+    outline: none;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 555px;
+    box-shadow: 10px 15px 15px 1px rgb(0, 0, 0, .8);
+    transition:  background 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background: rgb(0, 0, 0);
+    box-shadow:  0px 0px 20px rgba(253, 253, 253, 0.9);
+}
+
+.btn:hover ion-icon{
+    color: rgb(255, 255, 255);
+}
+
+.btn.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow:  0px 0px 20px rgba(253, 253, 253, 0.9);
+}
+
