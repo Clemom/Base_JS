@@ -10,6 +10,11 @@ cartes.forEach(carte => {
 
 function retourneCarte(){
 
+    document.getElementById('sonCarte').play();
+    sonCarte.volume = 0.1;
+    sonCarte.play();
+
+
     this.childNodes[1].classList.toggle('active')
     if( ! carteRetourner){
         carteRetourner = true;
@@ -18,6 +23,8 @@ function retourneCarte(){
     }
     carteRetourner = false;
     secondCarte = this;
+
+
 
     correspondance();
 }
