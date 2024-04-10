@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(141, 41, 41);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+h1 {
+    font-size: 60px;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 350px;
+    height: 80px;
+    border: none;
+    background: antiquewhite;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
+    transition: background 0.2s ease-in-out;
+}
+
+input:hover {
+    background: rgb(252, 222, 168);
+}
+
+#resultat.active{
+    width: 80%;
+    height: auto;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 15px;
+    background: antiquewhite;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
+}
+
+#resultat .titre {
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+#resultat .nom {
+    font-size: 60px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.chargement {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.chargement div.active {
+    position: absolute;
+    border: 4px solid antiquewhite;
+    opacity: 1;
+    border-radius: 50%;
+    animation: load 1s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+.chargement div:nth-child(2) {
+    animation-delay: -0.79s;
+}
+
+@keyframes load {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
