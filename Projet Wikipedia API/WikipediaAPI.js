@@ -29,7 +29,7 @@ function funcForm(e){
 
 async function wikipediaAPI(recherche){
     try {
-        const response = await fetch (`https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=${recherche}`);
+        const response = await fetch (`https://fr.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=${recherche}`);
         console.log(response.ok);
         if(!response.ok){
             throw newError(`${response.status}`)
